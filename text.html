@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework 4 - Text</title>
+ 
+<!--    RESET MUST COME FIRST    --> 
+ <link rel="stylesheet" href="css/reset.css">   
+<!--    FONTS    -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i|Oswald:400,600" rel="stylesheet">
+
+<!--    CSS      -->
+<link rel="stylesheet" href="css/framework4.css">
+
+<!--    FAVICON  -->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<!--    SCRIPTS  -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="scripts/fw4.js"></script>
+
+<!--    FAVICON  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<style>
+	.container{
+		width: 500px;
+		margin: 0 auto;
+		background-color: #f5f0e8;
+		padding: 10px 25px;
+	}
+</style>
+</head>
+
+<body>
+<div class ="container">
+<h2>Basic Text Styles</h2>
+<h5>Bold, Italic, Underlined Classes</h5>
+
+<div>bold -- <span class="bold">This text is bold</span></div>
+<div>italic -- <span class="italic">This text is italic</span></div>
+<!--NOTE: am experimenting with formatting. -->
+<div>deleted -- <span class="deleted">This text is deleted</span></div>
+<div>overline -- <span class="overline">This is overline</span></div>
+<div>underline -- <span class="underline">This is underlined</span></div>
+<div>underline-none -- <span>
+<a class="underline-none" href="#">I am a link with no underline</a></span>
+
+
+<h5>Text Alignment</h5>
+<p class = "left">This is left-aligned text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime enim non aperiam eius minima esse provident. Temporibus, cupiditate, quod omnis, quam a quo dolores consequuntur eius blanditiis aliquid deleniti unde.</p>
+<p class = "right">This is right-aligned text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero cupiditate rerum sapiente fuga, consectetur incidunt ut a culpa praesentium molestias facere dolorem minima distinctio quam adipisci dolor officia enim saepe.</p>
+<p class = "center">This is centered text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis illum aliquam, fuga porro earum saepe ullam voluptatem? Magnam quas pariatur, quidem mollitia distinctio quod nisi, dolor eum, itaque ad quis.</p>
+<p class = "justify">This is justified text lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, tenetur exercitationem saepe qui consequuntur, iste voluptatum voluptas hic fugiat nulla dolorem, odit officia. Laboriosam illum, voluptates veritatis id dolorem sequi.</p>
+
+<h5>Capitalization</h5>
+<p class="lower">THIS IS LOWERCASE TEXT</p>
+<p class = "upper">this is uppercase text</p>
+<p class = "titleCase">this is title case text</p>
+<h5>Block Quotes</h5>
+<p>Below is a block quote enclosed in HMTL <code>&lt;blockquote&gt;</code>tags:</p>
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque necessitatibus laboriosam dolorem voluptate, nam illum, error ut eveniet sequi quam magni aut maiores, pariatur eius consectetur, a sint aliquid accusantium.</blockquote>
+<h5>HMTL tags</h5>
+<p>To get <mark>highlighted</mark> text, use the <code>&lt;mark&gt;</code>tag.</p>
+<p>To get <small>small text</small> use the <code>&lt;small&gt;</code>tag </p>
+<p>For abbreviations use the<code>&lt;abbr&gt;</code> tag<abbr title="Federal Bureau of Investigation"> FBI</abbr></p>
+<p>The title of this painting is formatted by enclosing it in <code>&lt;cite&gt;</code> tags: <br><cite>American Gothic</cite> by Grant Wood. Painted in 1930.</p>
+<h5>Address</h5>
+<p>Below is an address (using the <code>&lt;address&gt;</code> tag and separating the lines wth br tags)</p>
+<address>
+  Twitter, Inc.<br>
+  1355 Market Street, Suite 900<br>
+  San Francisco, CA 94103<br>
+  Phone: (123) 456-7890
+</address>
+
+
+
+
+
+
+<!--note. here is a converter that will convert HTML to this below: https://www.web2generators.com/html-based-tools/online-html-entities-encoder-and-decoder-->
+<hr>
+<div>
+	&lt;p&gt;Below is a block quote enclosed in HMTL &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt;tags:&lt;/p&gt; &lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque necessitatibus laboriosam dolorem voluptate, nam illum, error ut eveniet sequi quam magni aut maiores, pariatur eius consectetur, a sint aliquid accusantium.&lt;/blockquote&gt;
+</div>
+<hr>
+
+</div><!--end container div-->
+</body>
+</html>
