@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework 4 - grid</title>
+
+ <!--    FONTS    -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i|Oswald:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:700,700i,900" rel="stylesheet">
+
+<!--    FAVICON  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!--    RESET     --> 
+ <link rel="stylesheet" href="css/reset.css">  
+  
+<!--    CSS      -->
+<link rel="stylesheet" href="css/framework4.css">
+
+<!--    SCRIPTS  -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="scripts/fw4.js"></script>
+
+
+<style>
+	div.gridContainer{
+		margin: 0 20px;
+	}
+	div.row{
+		border: 1px solid blue;
+	}
+	div[class*="col-"]{
+		border: 1px solid red;
+	}
+</style>
+</head>
+<body>
+
+<h1>I am an H1 headline</h1>
+<div class="gridContainer">
+<div class="row">
+	<div class = "col-s-12 col-m-12 col-l-4">
+		<h2>Section1 row1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dicta mollitia beatae totam vel magnam, et molestiae voluptas, rerum nesciunt officiis velit, accusantium quaerat! Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed.</p>
+	</div>
+
+	<div class = "col-s-6 col-m-6 col-l-4">
+		<h2>Section2 row1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dicta mollitia beatae totam vel magnam, et molestiae voluptas, rerum nesciunt officiis velit, accusantium quaerat! Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed.</p>
+	</div>
+
+	<div class = "col-s-6 col-m-6 col-l-4">
+		<h3>Section3 row1</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed. </p>
+	</div>
+</div> <!--end row1 div-->
+
+<div class="row">
+	<div class ="col-m-12 col-l-12">
+		<h3>Section4 row2</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+</div> <!--end row 2 div-->
+<div class="row">
+	<div class ="col-m-8 col-l-4">
+		<h3>Section5 row3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis. </p>
+	</div>
+	<div class ="col-m-4 col-l-8">
+		<h3>Section6 row3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+</div> <!--end row 3-->
+<p>
+	colm1 coll3 colg3 cosm2 c
+	small3, large4, med2 col small3 med2 large4 cols1 colm2 col s2 m2 l4
+	col med2 col sm4 lg3 med2 sma3 lar5
+</p>
+<div class="row">
+	<div class="col-m-8  col-l-3">
+		<h3>Section7 row4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-4  col-l-3">
+		<h3>Section8 row4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-3  col-l-3">
+		<h3>Section9 row4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-9  col-l-3">
+		<h3>Section10 row4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ullam odio deserunt eligendi amet magni architecto officiis, maiores ad eos. Reprehenderit officiis magni rerum sint quaerat, tempore animi. Ea, voluptatibus.</p>
+	</div>
+</div> <!--end row 5 div-->
+</div><!--end gridContainer div-->
+<h1>end of rows</h1>
+</body>
+</html>
