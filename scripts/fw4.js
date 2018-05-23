@@ -15,3 +15,13 @@ $(document).ready(function() {
 $(window).resize(function() {
 	footerAlign();
 })
+
+
+//  NAVIGATION
+//////////////////////
+ $(document).ready(function(){
+	 $(".navLinks").hide();
+	 $(".toggleBtn").click(function(){
+ 	$(".navLinks").slideToggle("fast");
+ 	});
+ });
