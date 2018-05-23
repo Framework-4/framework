@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework 4 - images</title>
+ <!--    FONTS    -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i|Oswald:400,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto:700,700i,900" rel="stylesheet">
+
+<!--    FAVICON  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!--    RESET     --> 
+ <link rel="stylesheet" href="..//css/reset.css">  
+  
+<!--    CSS      -->
+.css">
+<style>
+
+button, 
+a:active,
+a:hover {
+  outline: 0;
+}
+
+.navStrip{
+	background-color:red; 
+	padding-left: 10px;
+	padding-top: 8px;
+	height: 60px;
+}
+.navStrip a{
+	text-decoration: none;
+	color: white;
+	font-size: 28px;
+	text-shadow: 2px 2px 2px #808080;
+	}
+
+.toggle{
+	color: #fff;
+	font-size: 32px;
+	text-shadow: 2px 2px 2px #808080;
+	background-color: red;
+	position: absolute;
+	right:20px;
+	top:10px;
+	cursor: pointer;
+	border: none;
+}
+.toggle:active{
+	background-color: yellow;
+	}
+	
+/*Formatting for nav main menu */
+nav > ul {
+	list-style: none;
+}
+nav ul li{
+	font-family: Roboto;
+	font-size:  2rem;
+	line-height: 1.9;
+	text-align: center;
+	background-color: greenyellow;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	transition: .3s background-color;
+	border-top: 1px solid #ccc;
+}
+	
+li:first-child{
+		color: pink;
+	background-color: pink;
+	display: none;
+	}
+	
+nav a:hover {
+  background-color: #476d7c;
+}
+.banner{
+	background-color: burlywood;
+}
+.banner img{
+	max-width: 100%;
+
+}
+/*********************************************
+	4.GENERIC SELECTORS (SHARED PAGE STYLES)
+**********************************************/
+main{
+	margin: 0 2%;
+	background-color: deeppink;
+}
+
+	body{
+		background-color: powderblue;
+	}
+	
+	.container{
+		background-color: tan;
+		max-width: 960px;
+		margin: 0 auto;
+	}
+
+/*********************************************
+Helper*/
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* 6. FORMATTING FOR FOOTER*/
+/***********************************************/
+footer{
+		background-color: #1d3e53;
+		color: #fff;
+		font-size: .8em;
+		font-weight: 700;
+		clear: both;
+		text-align: center;
+		font-style: italic;
+		margin-top: .2em;
+		padding: .2em 0 .5em 0;
+	}
+/*********************************************
+	7.MEDIA QUERIES
+**********************************************/
+/****MEDIA QUERY FOR TABLET****/
+@media screen and (min-width: 600px) {
+/*Media query 600 styles for navigation*/
+	.menu{
+		display: block !important;
+	}
+	.toggle{
+		display:  none;
+	}
+
+	.navStrip{
+		display: none;
+	}
+
+
+
+	
+	nav li {
+    width: 90px;
+    line-height: 20px;
+    font-size: 1.1em;
+    display: inline-block;
+
+  }
+	
+	li:first-child{
+		color: pink;
+	background-color: pink;
+	display: inline-block;
+	}
+	
+	nav a {
+    border: 1px  solid #ccc;
+	padding: 16px 0;
+	text-align: center;
+  }
+/*	nav > ul > li {
+    text-align: center;
+  }*/
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+<div class="container">
+<div class="navStrip">
+	<!--<span><a href="index.html"><img src="images/greyhound_white_type2.png" alt=""></a></span>-->
+  <span ><a href="index.html">FW-4</a></span>
+
+   <button class="toggle"> <i class="fa fa-bars"></i></button>
+</div>
+<div class="navContainer">
+<nav class="menu">
+	<ul>
+     <li><a href="pages/home.html">home</a></li>
+     <li><a href="pages/plan.html">plan</a></li>
+     <li><a href="pages/learn.html">Learn</a></li>
+     <li><a href="pages/choose.html">choose</a></li>
+     <li><a href="pages/volunteer.html">volunteer</a></li>
+     <li><a href="pages/apply.html">apply</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="banner">
+ <img src="images/flower.jpg">
+ </div>
+<main>
+  <h3>Main (below banner) is pink</h3>
+  <p>Body is yellow <br>
+    header and footer are dark blue <br>
+   and container is white.Lorem ipsum dolor<i class="fa fa-bars"></i>sit amet, consectetur adipisicing elit. Libero magni repellat doloremque, delectus blanditiis sit doloribus! Labore amet inventore consequatur, dolorum rem officiis, sed exercitationem quisquam illum quas maxime odio.</p>
+  
+ </main><!--end Main div-->
+<footer>
+  <p>Copyright 2017 Operation Greyhound</p>
+</footer>
+<!--    SCRIPTS  -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="../scripts/nav2.js"></script>
+</div>
+</body>
+</html>

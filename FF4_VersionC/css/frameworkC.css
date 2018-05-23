@@ -1,0 +1,291 @@
+/*
+Font-Family: 'Roboto Condensed', Sans-Serif;
+Font-Size: 35px;
+Font-Family: 'Cabin', Sans-Serif;
+Font-Size: 16px;
+*/
+
+/*set color variables*/
+/*:root {
+    --dark-color: #466d6d;
+    --med-color: #669999; 
+	--light-color: #e0ebeb;
+	}*/
+/*MEDIA QUERIES: 480px, 736px, 980px*/
+:root {
+	--darker-color: #031327;
+    --dark-color: #034A60;
+    --med-color: #237F8C; 
+	--light-color: #ACBDAB;
+	--accent-color: #970464;
+	}
+
+/*BASIC STYLES FOR STRUCTURE*/
+html {
+	font-size: 62.5%;
+}
+body{
+	background-color:var(--accent-color);
+}
+.container{
+	max-width: 1000px;
+	background-color:#fff;
+	margin: 0 auto;
+	/*padding: 0 2%*/;
+	}
+header{
+	background-color: var(--dark-color);
+	padding:  10px;
+	}
+header:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+.banner img{
+	display: block;
+	width: 100%;
+}
+.gridContainer{
+	padding: 0 2%;
+}
+
+footer{
+	background: var(--med-color);
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	}
+/*--STYLES FOR NAVIGATION*/
+/*add margin to UL to drop it down below buttons*/	
+.navLinks ul{
+	margin-top: 45px;
+	list-style-type: none;	
+	}	
+/*logo text styles*/	
+.logoText {
+	font-family: "Cabin", sans-serif;
+	float: left;
+	font-size:14pt;
+	text-align: left;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 140px;
+}
+.logoText a{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+.logoText a:hover{
+	color: var(--accent-color);
+}
+/*toggle button styles*/
+.toggleBtn {
+	color: #fff;
+	float: right;
+	font-size:22pt;
+	text-align: center;
+	font-weight:400;
+	line-height: 25px;
+	height: 25px;
+	margin: 5px 5px 5px 0;
+	width: 40px;
+}
+ /*nav link styles*/
+.navLinks li{
+	font-family: "Cabin", sans-serif;
+	font-size: 14pt;
+	line-height: 35px;
+	height: 35px;
+	background-color: var(--dark-color);
+	text-align: center;
+	border-top: 1px solid #fff;
+	}
+.navLinks a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	}
+.navLinks a:hover {
+	background-color: var(--med-color);
+	}
+
+/*-- NAVIGATION MEDIA QUERY--------------*/
+@media screen and (min-width: 500px) {
+/*remove top-margin used for dropdown, make sure nav is not hidden, and hide the toggle*/
+	.navLinks ul{
+		margin: 0;
+		float:right;}
+	.navLinks{
+		display: block !important;}
+	.toggleBtn{
+		display:	none;}
+/*Change link font size, width at  breakpoints*/
+	header{
+		padding: 0;}
+	.navLinks li {
+		width: 80px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
+		display: block;
+		border: none;
+		border-left: 1px solid #fff;
+		float: left;}
+}
+@media screen and (min-width: 700px) {
+	.navLinks li {
+		width: 120px;}
+	.logoText {
+		font-size:18pt;
+		width: 170px;
+		padding-top: 5px;}
+}
+@media screen and (min-width: 900px) {
+}
+
+
+
+/*-------------GRID BASE(100%)---------------*/
+[class*= "col-"]{
+	width: 100%;
+/*	padding: 10px 10px;*/
+}
+/*------GRID MEDIA QUERY -------*/
+@media screen and (min-width: 500px) {
+	*[class*="col-"] {
+    float: left;
+	padding: 2%;}
+	
+	.row::before, 
+	.row::after {
+		  content: "";
+		  display: table;
+		  clear: both;}
+	
+	.col-s-1{width: calc(100% / (12/1));}
+	.col-s-2{width: calc(100% / (12/2));}
+	.col-s-3{width: calc(100% / (12/3));}
+	.col-s-4{width: calc(100% / (12/4));}
+	.col-s-5{width: calc(100% / (12/5));}
+	.col-s-6{width: calc(100% / (12/6));}
+	.col-s-7{width: calc(100% / (12/7));}
+	.col-s-8{width: calc(100% / (12/8));}
+	.col-s-9{width: calc(100% / (12/9));}
+	.col-s-10{width: calc(100% / (12/10));}
+	.col-s-11{width: calc(100% / (12/11));}
+	.col-s-12{width: calc(100% / (12/12));}
+}
+@media screen and (min-width: 700px) {
+	.col-m-1{width: calc(100% / (12/1));}
+	.col-m-2{width: calc(100% / (12/2));}
+	.col-m-3{width: calc(100% / (12/3));}
+	.col-m-4{width: calc(100% / (12/4));}
+	.col-m-5{width: calc(100% / (12/5));}
+	.col-m-6{width: calc(100% / (12/6));}
+	.col-m-7{width: calc(100% / (12/7));}
+	.col-m-8{width: calc(100% / (12/8));}
+	.col-m-9{width: calc(100% / (12/9));}
+	.col-m-10{width: calc(100% / (12/10));}
+	.col-m-11{width: calc(100% / (12/11));}
+	.col-m-12{width: calc(100% / (12/12));}
+}
+/*------GRID STYLES 980px -------*/
+@media screen and (min-width: 900px) {
+	.col-l-1{width: calc(100% / (12/1));}
+	.col-l-2{width: calc(100% / (12/2));}
+	.col-l-3{width: calc(100% / (12/3));}
+	.col-l-4{width: calc(100% / (12/4));}
+	.col-l-5{width: calc(100% / (12/5));}
+	.col-l-6{width: calc(100% / (12/6));}
+	.col-l-7{width: calc(100% / (12/7));}
+	.col-l-8{width: calc(100% / (12/8));}
+	.col-l-9{width: calc(100% / (12.9));}
+	.col-l-10{width: calc(100% / (12/10));}
+	.col-l-11{width: calc(100% / (12/11));}
+	.col-l-12{width: calc(100% / (12/12));}
+}
+
+/*------------- TYPOGRAPHY---------------*/
+/* html is set to 62.5% so that all the REM measurements are based on 10px sizing. So basically 1.5rem = 15px :) */
+body {
+	font-size: 1.5rem; 
+	line-height: 1.6;
+	font-weight: 300;
+	font-family: "Cabin", sans-serif;}
+
+h1 { font-size: 3.6rem; line-height: 1.25;}
+h2 { font-size: 3.0rem; line-height: 1.3; }
+h3 { font-size: 2.4rem; line-height: 1.35;}
+h4 { font-size: 1.8rem; line-height: 1.5; }
+h5 { font-size: 1.5rem; line-height: 1.6; }
+h6 { font-size: 1.2rem; line-height: 1.0; }
+
+h1, h2, h3, h4, h5, h6 {
+	color: #000;
+	font-weight: 600; 
+	font-family: 'Roboto Condensed', Sans-Serif;}
+
+/*-- TYPOGRAPHY MEDIA QUERY --------------*/
+@media screen and (min-width: 500px) {
+}
+@media screen and (min-width: 700px) {
+	
+}
+@media screen and (min-width: 900px) {
+}
+
+/*-------------TEXTSTYLES---------------*/
+/*CLASSES*/
+.bold{font-weight: bold;}
+.italic{font-style: italic;}
+.center{text-align: center;}
+.left{text-align: left;}
+.right{text-align: right;}
+.justify{text-align: justify;}
+.underline{text-decoration: underline;}
+.underline-none{text-decoration: none;}
+.strike-through{text-decoration: line-through;}
+.deleted{text-decoration: line-through;}
+.overline{text-decoration: overline;}
+.upper{text-transform: uppercase;}
+.lower{text-transform: lowercase;}
+.title{text-transform: capitalize;}
+/*HTML ELEMENTS*/
+blockquote{padding: 5px 20px;}
+address{display: block;
+	font-style: italic;
+	line-height: 1.2;}
+
+/*-------------TABLE STYLES---------------*/
+
+/*-------------FORM STYLES---------------*/
+
+/*-------------BUTTON STYLES---------------*/
+
+/*-------------IMAGE AND VIDEO STYLES--------------*/
+.img-responsive{
+	display: block;
+	max-width: 100%;
+	height: auto;}
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;}
+.video-container iframe, .video-container object, .video-container embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;}
+/*-------------HELPER CLASSES---------------*/
+
+/*-------------PRINT CLASSES)---------------*/
+
+/*-------------ICON CLASSES)---------------*/
+
+/*-------------COMPONENTS---------------*/
