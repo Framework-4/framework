@@ -1,0 +1,36 @@
+.banner h1{
+	padding: 40px;
+	color: #fff;
+	}
+	@keyframes bannerColor {
+	from {background-color: var(--accent-color);}
+	to {background-color: var(--dark-color);}
+}
+	@keyframes bannerGrow {
+	from {font-size: 12px;
+		padding: 0}
+	to {font-size: 36px;
+		padding: 15px;}
+}
+/* The elements to apply the animation to */
+div.banner {
+   border-top: 1px solid #fff;
+	animation-name: bannerColor;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+.banner h1{
+/*	font-size: 24px;*/
+	animation-name: bannerGrow;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+		}
+/*media query*/
+
+@media screen and (min-width: 700px){
+	@keyframes bannerGrow {
+	from {font-size: 24px;}
+	to {font-size: 96px;
+		padding: 24px;}
+}
