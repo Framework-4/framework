@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Framework 4 - forms</title>
+ <!--		FONTS		-->
+	<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!--		RESET		 --> 
+	 <link rel="stylesheet" href="../css/reset.css">	
+
+	<!--		CSS			-->
+	<link rel="stylesheet" href="../css/frameD.css">
+	<link rel="stylesheet" href="../css/forms.css">
+
+	<!--		SCRIPTS	-->
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src="../scripts/nav.js"></script>
+
+
+</head>
+<body>
+	<div class="container">
+
+		<div class="gridContainer">
+			<div class="row">
+				 <div class="col-l-12">
+					 <h1>Form Template</h1>
+					 <p>Copy and paste the hmtl for the form below and edit it to fit your needs. Make sure you have the forms.css file in your head tag.  </p>
+			
+				
+					</div>
+				 <div class="col-l-12">
+					 <form action="" method="post" class="formA">
+						<h1>Form Title 
+							<span>Please fill in all fields.</span>
+						</h1>
+						<fieldset>
+							<legend>Fieldset legend (optional)</legend>
+								<label for="name">
+									<span>Your Name :</span>
+									<input id="name" type="text" name="name" placeholder="Your Full Name">
+								</label>
+								<label for="email">
+									<span>Your Email :</span>
+									<input id="email" type="email" name="email" placeholder="Valid Email Address">
+								</label >
+								<label for="phone">
+									<span>Your Phone :</span>
+									<input id="phone" type="tel" name="tel" placeholder="Phone number">
+								</label>
+								<label for="message">
+									<span>Textarea:</span>
+									<textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+								</label> 
+						 		<label for="color">
+									<span>Select:</span>
+									<select name="color">
+										<option>black</option>
+										<option>white</option>
+										<option>red</option>
+										<option>yellow</option>
+										<option>blue</option> 
+										<option>green</option>
+										<option>orange</option>
+										<option>purple</option>
+										<option>pink</option>
+									</select>
+								</label>
+								<label for="size">
+										<span>Radio:</span>
+											 <ul class = "radioList">
+												<li><input type="radio" name="size" value="small">Small</li>
+												<li><input type="radio" name="size" value="medium">Medium</li>
+												<li><input type="radio" name="size" value="large">Large</li>
+												<li><input type="radio" name="size" value="xlarge">Extra Large</li>
+										</ul>
+								</label>
+								<label for='feature'>
+									<span>Checkbox:</span>
+										<ul class ="checkboxList">
+											<li><input type="checkbox" name="feature" value="feature1"> Feature 1 </li>
+											<li><input type="checkbox" name="feature" value="feature2" checked> Feature 2 </li>
+											<li><input type="checkbox" name="feature" value="feature3"> Feature 3 </li>
+											<li><input type="checkbox" name="feature" value="feature4"> Feature 4 </li>
+											<li><input type="checkbox" name="feature" value="feature5"> Feature 5 </li>
+											<li><input type="checkbox" name="feature" value="feature6"> Feature 6 </li>
+											</ul>
+								</label>
+								 <label for="submit">
+									<span>&nbsp;</span> 
+									<input type="submit" class="button" value="Submit"> 
+								</label> 
+								<label for="reset">
+									<span>&nbsp;</span> 
+									<input type="reset" class="button" value="Reset"> 
+								</label>
+						</fieldset>
+					</form>
+				</div> <!--end column div-->
+			</div> <!--end row div-->
+			
+		</div> <!--end gridContainer div-->
+		<footer>I am a footer</footer>
+	</div> <!--end container div-->
+</body>
+</html>

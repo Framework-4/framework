@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+ 
+ <!--    FONTS    -->
+<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<!--    FAVICON  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<!--    RESET     --> 
+ <link rel="stylesheet" href="../css/reset.css">  
+  
+<!--    CSS      -->
+<link rel="stylesheet" href="../css/frameD.css">
+<style>
+	
+table {
+    width:100%;
+}
+th{
+font-weight: bold;
+	}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px 15px;
+    text-align: left;
+}
+.striped tr:nth-child(even) {
+    background-color: #eee;
+}
+.striped tr:nth-child(odd) {
+   background-color: #fff;
+}
+.darkHead th {
+    background-color: black;
+    color: white;
+}
+.compact th, .compact td{
+	padding: 5px 10px;	
+	}
+	
+</style>
+
+<!--    SCRIPTS  -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="../scripts/nav.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="gridContainer">
+		<div class="row">
+			<div class="col-s-12">
+			<p>Tables have a with of 100%. If you want to restrain the size,  adjust the number of columns they span. </p>
+				<h2>Table</h2>
+	<h4>Basic table</h4>		
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Location</th>
+    <th>Salary</th>
+  </tr>
+
+   <tr>
+    <td>Sam</td>
+    <td>Gomez</td>
+    <td>Portland</td>
+    <td>$76,000</td>
+  </tr> <tr>
+    <td>Alice</td>
+    <td>Hammer</td>
+    <td>Portland</td>
+    <td>$38,000</td>
+  </tr> <tr>
+    <td>Ruth</td>
+    <td>Ginsberg</td>
+    <td>Portland</td>
+    <td>$46,000</td>
+  </tr>
+</table>
+
+
+<h4>Table with class of "darkHead"</h4>
+<table class="darkHead">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Location</th>
+    <th>Salary</th>
+  </tr>
+  
+  <tr>
+    <td>John</td>
+    <td>Brinker</td>
+    <td>Portland</td>
+    <td>$26,000</td>
+  </tr>
+   <tr>
+    <td>Sam</td>
+    <td>Gomez</td>
+    <td>Portland</td>
+    <td>$76,000</td>
+  </tr>
+    <tr>
+    <td>Jane</td>
+    <td>Jones</td>
+    <td>New York</td>
+    <td>$45,000</td>
+  </tr>
+</table>	
+<h4>Table with class of "striped" </h4>
+	<table class="striped">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Location</th>
+    <th>Salary</th>
+  </tr>
+  <tr>
+    <td>Jane</td>
+    <td>Jones</td>
+    <td>New York</td>
+    <td>$45,000</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Smith</td>
+    <td>Boston</td>
+    <td>$37,600</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Brinker</td>
+    <td>Portland</td>
+    <td>$26,000</td>
+  </tr>
+</table>
+<h4>Table with classes of "darkHead" and "striped"</h4>
+<table class="darkHead striped">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Location</th>
+    <th>Salary</th>
+  </tr>
+  
+  <tr>
+    <td>John</td>
+    <td>Brinker</td>
+    <td>Portland</td>
+    <td>$26,000</td>
+  </tr>
+   <tr>
+    <td>Sam</td>
+    <td>Gomez</td>
+    <td>Portland</td>
+    <td>$76,000</td>
+  </tr>
+    <tr>
+    <td>Jane</td>
+    <td>Jones</td>
+    <td>New York</td>
+    <td>$45,000</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Smith</td>
+    <td>Boston</td>
+    <td>$37,600</td>
+  </tr>
+</table>
+<h4>Table with a class of "compact"</h4>
+	<table class="compact">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Location</th>
+    <th>Salary</th>
+  </tr>
+  
+  <tr>
+    <td>John</td>
+    <td>Brinker</td>
+    <td>Portland</td>
+    <td>$26,000</td>
+  </tr>
+   <tr>
+    <td>Sam</td>
+    <td>Gomez</td>
+    <td>Portland</td>
+    <td>$76,000</td>
+  </tr>
+    <tr>
+    <td>Jane</td>
+    <td>Jones</td>
+    <td>New York</td>
+    <td>$45,000</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Smith</td>
+    <td>Boston</td>
+    <td>$37,600</td>
+  </tr>
+</table>
+				<p>more</p>
+			</div>
+		</div> <!--end row div-->
+	</div> <!--end gridContainer div-->
+</div><!--end container div-->
+
+
+
+</body>
+</html>
