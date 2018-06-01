@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,	initial-scale=1.0">
+<title>Grid</title>
+<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../css/reset4.css">
+<link rel="stylesheet" href="../css/styles4.css">
+<link rel="stylesheet" href="../css/grid4.css">
+<link rel="stylesheet" href="../css/type4.css">
+
+<style>
+
+</style>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="../scripts/nav.js"></script>
+
+</head>
+<body>
+<div class="container">
+<header>
+	<h2>I am a header outside the grid container</h2>
+</header>
+
+<div class="gridContainer">
+
+<main>
+
+<div class="row">
+	<div class= "col-s-12">
+		<h1>How to use the grid</h1>
+
+		<p>Every page should have a div with a class of "container" that is used to center the page in the browser window. The header, the optional banner,  the "gridContainer" and the footer are all inside this div.</p>
+		<p>The header  contains the nav and the logo. </p>
+		
+		<p>Next comes the "gridContainer" div.  Everything except the footer should be contained in this div. Inside this div, you can have semantic sections like "main" and "aside", etc.  </p>
+		<p>But inside these sections you must have a structures of divs with a class or "row" enclosing divs with a column classes like this: class ="col-s-6 col-m-4 col-l-3". This means the div would take up 6 columns at small size, four columns at medium size, and 3 columns at large size.At very small size (mobile portrait), all divs default to 100%. </p>
+		
+		<p>If you want a section to be full width at all breakpoints, give it a SINGLE class of "col-s-12". 
+
+		<p>	Each row at each width should add up to 12 columns or multiples of 12 columns.</p>
+		</div>
+	</div>
+	
+<div class="row justify">
+	<div class = "col-s-12 col-m-12 col-l-4">
+		<h2>Section1 row1</h2>
+		<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dicta mollitia beatae totam vel magnam, et molestiae voluptas, rerum nesciunt officiis velit, accusantium quaerat! Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed.</p>
+	</div>
+
+	<div class = "col-s-6 col-m-6 col-l-4">
+		<h2>Section2 row1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dicta mollitia beatae totam vel magnam, et molestiae voluptas, rerum nesciunt officiis velit, accusantium quaerat! Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed.</p>
+	</div>
+
+	<div class = "col-s-6 col-m-6 col-l-4">
+		<h3>Section3 row1</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed. </p>
+	</div>
+</div> <!--end row1 div-->
+
+<div class="row">
+	<div class ="col-s-12 ">
+		<h3>Section4 row2</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+</div>
+ <!--end row  div-->
+<div class="row">
+	<div class ="col-m-6 col-l-4">
+		<h3>Section5 row3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis. </p>
+	</div>
+	<div class ="col-m-6 col-l-8">
+		<h3>Section6 row3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+</div> <!--end row div-->
+
+<div class="row">
+	<div class="col-m-6  col-l-3">
+		<h3>Section7 row4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-6  col-l-3">
+		<h3>Section8 row4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-6  col-l-3">
+		<h3>Section9 row4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-6  col-l-3">
+		<h3>Section10 row4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ullam odio deserunt eligendi amet magni architecto officiis, maiores ad eos. Reprehenderit officiis magni rerum sint quaerat, tempore animi. Ea, voluptatibus.</p>
+	</div>
+</div> <!--end row 4 div-->
+
+ </main><!--end Main div-->
+ 
+	</div> <!--end gridContainer-->
+<footer>
+<p class="center">I am a footer outside the grid container</p>
+</footer>
+</div> <!--end container div-->
+</body>
+</html>
