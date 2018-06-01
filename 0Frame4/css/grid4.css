@@ -1,0 +1,74 @@
+.container{
+	max-width: 1024px;
+	background-color:#fff;
+	margin: 0 auto;
+	}
+.gridContainer{
+	padding: 0 15px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.row{
+	margin-right: -15px;
+	margin-left: -15px;
+}
+/*--GRID BASE(100%)-------*/
+[class*= "col-"]{
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+	.row::before, 
+	.row::after {
+		  content: "";
+		  display: table;
+		  clear: both;}
+/*------GRID MEDIA QUERY -------*/
+@media screen and (min-width: 500px) {
+	
+
+	
+	.col-s-1{width: calc(100% / (12/1));}
+	.col-s-2{width: calc(100% / (12/2));}
+	.col-s-3{width: calc(100% / (12/3));}
+	.col-s-4{width: calc(100% / (12/4));}
+	.col-s-5{width: calc(100% / (12/5));}
+	.col-s-6{width: calc(100% / (12/6));}
+	.col-s-7{width: calc(100% / (12/7));}
+	.col-s-8{width: calc(100% / (12/8));}
+	.col-s-9{width: calc(100% / (12/9));}
+	.col-s-10{width: calc(100% / (12/10));}
+	.col-s-11{width: calc(100% / (12/11));}
+	.col-s-12{width: calc(100% / (12/12));}
+}
+@media screen and (min-width: 700px) {
+	.col-m-1{width: calc(100% / (12/1));}
+	.col-m-2{width: calc(100% / (12/2));}
+	.col-m-3{width: calc(100% / (12/3));}
+	.col-m-4{width: calc(100% / (12/4));}
+	.col-m-5{width: calc(100% / (12/5));}
+	.col-m-6{width: calc(100% / (12/6));}
+	.col-m-7{width: calc(100% / (12/7));}
+	.col-m-8{width: calc(100% / (12/8));}
+	.col-m-9{width: calc(100% / (12/9));}
+	.col-m-10{width: calc(100% / (12/10));}
+	.col-m-11{width: calc(100% / (12/11));}
+	.col-m-12{width: calc(100% / (12/12));}
+}
+
+@media screen and (min-width: 900px) {
+	.col-l-1{width: calc(100% / (12/1));}
+	.col-l-2{width: calc(100% / (12/2));}
+	.col-l-3{width: calc(100% / (12/3));}
+	.col-l-4{width: calc(100% / (12/4));}
+	.col-l-5{width: calc(100% / (12/5));}
+	.col-l-6{width: calc(100% / (12/6));}
+	.col-l-7{width: calc(100% / (12/7));}
+	.col-l-8{width: calc(100% / (12/8));}
+	.col-l-9{width: calc(100% / (12.9));}
+	.col-l-10{width: calc(100% / (12/10));}
+	.col-l-11{width: calc(100% / (12/11));}
+	.col-l-12{width: calc(100% / (12/12));}
+}
