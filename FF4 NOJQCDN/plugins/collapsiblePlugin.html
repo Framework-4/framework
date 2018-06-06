@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,	initial-scale=1.0">
+<title>Grid</title>
+<style>
+    body{
+        background-color:#45A293;
+        margin: 0;
+        
+    }
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    
+    header, footer{
+        background-color: silver;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    main{
+        margin: 0 15px;
+    }
+    h3{
+        margin: 0;
+        padding: 0;
+    }
+	.collapsible {
+        background-color: grey;
+        color: black;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: 1px solid black;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        margin-top: 10px;
+        }
+    .active, .collapsible:hover {
+        background-color: black;
+        color: #fff;
+        }
+    .content {
+        padding: 6px 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #fff;
+    }
+    .collapsible:last-of-type{
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+<header>
+    <h3>This is the header</h3>
+</header>
+<main>
+<div>
+	<h1>How to create collapsible containers </h1>
+	<p>To create collapsible containers, you need to have button with a class of "collapsible" and a div underneath with a class of "content."  Make sure you include the style in the head above or copy and paste it to a linked css file. For this demo, the container has been given a max-width 700px and the main section has been given left and right  margins, just to make it easer to see the layout. </p>
+</div>
+
+<button class="collapsible">Container Name</button>
+<div class="content">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe sint non, voluptate aperiam, eligendi ut libero minima, cupiditate eum voluptatem animi dicta asperiores eos a, expedita quod dolore etlorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe sint non, voluptate aperiam, eligendi ut libero minima, cupiditate eum voluptatem animi dicta asperiores eos a, expedita quod dolore et.lore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe sint non, voluptate aperiam, eligendi ut libero minima, cupiditate eum voluptatem animi dicta asperiores eos a, expedita quod dolore et.</p>
+</div>
+
+<button class="collapsible">Container Name</button>
+<div class="content">
+	<p>Inside any semantic sections in the "gridContainer" you must have divs that have row and column classes.You can change the number of columns a div will occupy at different browser widths ("breakpoints"). These are set by media queries in the CSS and can be changed to suit your layout. It is good practice to make sure that the number of columns occupied on a row add up to 12 or multiples of 12 at every breakpoint. Your HTML code should should look like this, beginning with the body tag.</p>
+</div>
+
+<button class="collapsible">Column class syntax</button>
+<div class="content">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe sint non, voluptate aperiam, eligendi ut libero minima, cupiditate eum voluptatem animi dicta asperiores eos a, expedita quod dolore etlorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe sint non, voluptate aperiam, eligendi ut libero minima, cupiditate eum voluptatem animi dicta asperiores eos a, expedita quod dolore et.lore.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae saepe sint non, voluptate aperiam, eligendi ut libero minima, cupiditate eum voluptatem animi dicta asperiores eos a, expedita quod dolore et.</p>
+</div>
+<br>
+<div><h3>Include the JS</h3>
+<p>Make sure you include the javascript at the bottom of  your page (before the closing body tag) or cut and paste it into a file and link to it.</p></div>
+</main> <!--end main div-->
+<footer>This is the footer</footer>
+</div> <!--end container div-->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+</body>
+</html>

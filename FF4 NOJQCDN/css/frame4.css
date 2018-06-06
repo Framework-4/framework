@@ -1,0 +1,250 @@
+/*COLOR VARIABLES*/
+:root {
+--color1: #0B0C10;/*darkest*/
+--color2: #1F2833;/*deep blue*/
+--color3: #C5C6C7; /*light gray*/
+--color4: #66FCF1;/*electric blue*/
+--color5: #45A293;/*bluegreen*/
+}
+
+
+/*STRUCTURE STYLES*/
+body{
+	background-color: var(--color3);
+}
+header, footer{
+	background-color: var(--color2);
+	color: var(--color5);
+	clear: both;
+}
+
+
+
+footer p{
+	padding: 13px 0 0 0;
+	color: var(--color4);
+	text-align: center;
+	margin-bottom: 0;
+}
+
+
+.container{
+	max-width: 960px;
+	min-width: 400px;
+	background-color:#fff;
+	margin: 0 auto;
+	}
+.gridContainer{
+/*	padding: 0 15px;*/
+	background-color: #fff;
+}
+code{
+	font-size: 1.5rem;
+}
+
+.pad12{
+	padding: 12px;
+}
+/*HOME PAGE STYLES*/
+#home .banner{
+		width: 100%;
+		height: 60%;
+		font-family: "Arial", sans-serif;
+	}
+
+.company{
+	background-color: var(--color2);
+	text-align: center;
+	}
+.company h2{
+		font-size: 3rem;
+		color: #fff;
+		font-weight: normal;
+		padding-top: 40px;
+	}
+.company h1{
+		font-size: 4rem;
+		color: var(--color4);
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+.tags{
+		padding-bottom: 25px;
+	}
+	.tags span{
+		display: inline-block;
+		color: #fff;
+		font-size: 1.8rem;
+		padding-bottom: 15px;
+	}
+	.download{
+		padding: 12px 20px;
+		margin-bottom: 40px;
+		border: 1px solid var(--color4);
+
+		box-shadow: 3px 3px 5px var(--color5);
+		display: inline-block;
+	}
+.download a{
+		color: #66fcf1;
+		display: block;
+		font-size: 1.8rem;
+}
+
+#home .banner{
+	border-left: 1px solid var(--color4);
+	border-right: 1px solid  var(--color4);
+	border-bottom: 1px solid  var(--color4);
+	border-top: 1px solid  var(--color4);
+}
+
+@media screen and (min-width:500px){
+	#home .banner{
+	border-top: none;
+}
+	}
+
+#home .banner .fa-check{
+		color: var(--color4);
+	}
+#home main h1{
+	padding-top: 20px;
+/*	color: var(--color5);
+	text-shadow: 1px 1px 1px #333;*/
+}
+#home .ffff{
+	padding-top: 20px;
+}
+#home .ffff h3{
+	text-align: center;
+}
+#home .ffff p{
+	font-style: italic;
+	font-size: 1.6rem;
+}
+#home hr { 
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-style: inset;
+    border-width: 1px;
+		border-color: var(--color4);
+		box-shadow: 2px 2px 2px var(--color5);
+}
+
+
+.howUse{
+	padding: 10px 30px;
+}
+	
+.howUse h2{
+	text-align: center;
+	
+}
+#home .checkpoints p{
+	margin-left: 10%;
+}
+
+#home h3.action{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+#home .example p {
+	background-color: var(--color2);
+	border: 1px solid black;
+	border-radius: 5px;
+	box-shadow: 4px 4px 4px var(--color5);
+	text-align: center;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+#home .example a{
+	display:block;
+		padding: 20px;
+		color: var(--color4);
+	
+}
+
+#home footer{
+	margin-top: 2rem;
+}
+
+/*MULTIPLE PAGES*/
+#grid h1, #colors h1, #styles h1, #plugins h1{
+	padding: 10px 0;
+}
+/*GRID PAGE STYLES*/
+
+/*#grid  main{
+	padding: 0 30px;
+}*/
+#grid .gridContainer,
+#styles .gridContainer,
+#colors .gridContainer,
+#plugins .gridContainer{
+		padding: 0 30px;
+}
+
+/*PLUGINS PAGE STYLES*/
+
+
+#plugins .btnPlugin{
+	margin: 0 auto;
+
+	border: 1px solid black;
+	border-radius: 5px;
+	display: block;
+	background-color: var(--color5);
+}
+#plugins .btnPlugin a{
+	color: #fff;
+	font-size: 1.8rem;
+	padding: 20px 30px;
+	text-transform: uppercase;
+	display: block;}
+
+
+/*COLORS PAGE STYLES*/
+	
+	#colors table{
+	max-width: 400px;
+		margin: 0 auto;
+	}
+	#colors td{
+		width: 200px;
+		text-align: center;
+	}
+
+
+
+
+/*miscellaneous styles*/
+code{
+	box-shadow: 5px 5px 5px var(--color2);
+	}
+.collapsible {
+    background-color: var(--color3);
+    color: var(--color2);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    outline: none;
+		font-size: 15px;
+}
+.active, .collapsible:hover {
+    background-color: var(--color5);
+	color: #fff;
+}
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+		padding: 10px;
+		
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,	initial-scale=1.0">
+<title>Framework4 Colors</title>
+<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../css/framework4.css">
+<link rel="stylesheet" href="../css/nav4.css">
+<link rel="stylesheet" href="../css/frame4.css">
+
+<script src="../scripts/jquery-3.3.1.min.js"></script>
+<script src="../scripts/nav.js"></script>
+<script src="../scripts/collapse.js"></script>
+</head>
+
+<body id="colors">
+<div class="container">
+  <header>
+      <div class="logoText"><a href="../index.html">Framework-4</a></div>
+      <div class="toggleBtn" ><i class="fa fa-bars"></i></div>
+      <nav class="navLinks">
+           <ul>
+            <li><a href="grid.html">Grid</a></li>
+            <li><a href="styles.html">Styles</a></li>
+            <li><a href="plugins.html">Plugins</a></li>
+            <li><a href="colors.html">Colors</a></li>
+          </ul>
+      </nav>
+    </header>
+
+<div class="gridContainer">
+<main>
+<div>
+    <h1>How to use our colors</h1>
+    <p>Designers who use SASS often include variables for colors and fonts. The team at Framework-4 wanted to give its users the same convenient tools without the need compile the code into CSS. YOu can copy and and paste the CSS code below to define your variables, edit the colors, and then use them throughout your site as shown in the example. In naming the variables, we found that names like "light," "medium," and "dark" worked for some palettes, but not for others and the same was true with names like "primary-color" and "secondary-color."  So to keep things simple, we named our variables "--color1", "--color2", etc. For our Framework-4 site we used our "Seaglass" palette. You can see this color palette and others by clicking the button below. </p>
+
+   	<div class="col-s-5">
+   	 <pre><code >
+ :root {
+  --color1: #000;
+  --color2: #303030;
+  --color3: #606060; 
+  --color4: #D3D3D3;
+  --color5: #fff;
+	</code></pre>
+  </div>
+
+<div class="col-s-7">
+<pre><code>
+ body{
+  background-color: var(--color2);}
+header, footer{
+  background-color: var(--color4);}
+.container{
+  background-color: var(--color5);}
+  
+</code></pre>
+</div>
+
+</div> <!--end row-->
+
+<button class="collapsible">Seaglass Palette</button>
+<div class="content">
+<p>This is the "Seaglass" palette that we used in contructing this site. We liked the range of cool greens and the conrasting deep blue (almost black). Although our Framework-4.css ships without variables and uses a neutral palette of black, white, and shades of gray, it is easy to define variables at the top of the file and choose from some of our marvelous color palettes. Click on the buttons below to see them. </p>
+<table>
+<tr><th>Seaglass palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#17252A">#17252A</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#2B7A78">#2B7A78</td></tr>
+<tr><td>color3</td><td style="color:#000; background-color:#3AAFA9">#3AAFA9</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#DEF2F1">#DEF2F1</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#FEFFFF">#FEFFFF</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Dusty Rose Palette</button>
+<div class="content">
+<table>
+<tr><th>Dusty Rose Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#1A1A1D">#1A1A1D</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#4E4E50">#4E4E50</td></tr>
+<tr><td>color3</td><td style="color:#000; background-color:#6F2232">#6F2232</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#950740">#950740</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#C3073F">#C3073F</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Bluesy Pink Palette</button>
+<div class="content">
+<table>
+<tr><th>Bluesy Pink Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#EDC7B7">#EDC7B7</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#EEE2DC">#EEE2DC</td></tr>
+<tr><td>color3</td><td style="color:#000; background-color:#BAB2B5">#BAB2B5</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#123C69">#123C69</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#AC3B61">#AC3B61</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Sweet Peach Palette</button>
+<div class="content">
+<table>
+<tr><th>Sweet Peach Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#EAE7DC">#EAE7DC</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#D8CEA5">#D8CEA5</td></tr>
+<tr><td>color3</td><td style="color:#000; background-color:#8E8D8A">#8E8D8A</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#E98074">#E98074</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#E85A4F">#E8FA4F</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Electric Blue Palette</button>
+<div class="content">
+<table>
+<tr><th>Electric Blue Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#0B0C10">#0B0C10</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#1F2833">#1F2833</td></tr>
+<tr><td>color3</td><td style="color:#000; background-color:#C5C6C7">#C5C6C7</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#66FCF1">#66FCF1</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#45A293">#45A293</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Muted Elegance Palette</button>
+<div class="content">
+<table>
+<tr><th>Muted Elegance palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#EDC7B7">#EDC7B7</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#EEE2DC">#EEE2DC</td></tr>
+<tr><td>color3</td><td style="color:#000; background-color:#BAB2B5">#BAB2B5</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#123C69">#123C69</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#AC3B61">#AC3B61</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Purple Fusion Palette</button>
+<div class="content">
+<table>
+<tr><th>Purple Fusion Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#D83F87">#17252A</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#2A1B3D">#2B7A78</td></tr>
+<tr><td>color3</td><td style="color:#000; background-color:#44318D">#3AAFA9</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#DEF2F1">#E98074</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#A4B3B6">#FEFFFF</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Lush Green Palette</button>
+<div class="content">
+<table>
+<tr><th>Lush Green Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#61892F">#61892F</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#86C232">#86C232</td></tr>
+<tr><td>color3</td><td style="color:#000; background-color:#222629">#222629</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#474B4F">#474B4F</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#6B6E70">#6B6E70</td></tr>
+</table>
+</div>
+ 
+<button class="collapsible">Screaming Joy Palette</button>
+<div class="content">
+<table>
+<tr><th>Screaming Joy Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#272727">#272727</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#747474">#747474</td></tr><tr><td>color3</td><td style="color:#000; background-color:#FF6525">#FF6525</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#FFE400">#FFE400</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#14876C">#14876C</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Soft Earth Palette</button>
+<div class="content">
+<table>
+<tr><th>Soft Earth Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#8D8741">#8D8741</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#659DBD">#659DBD</td></tr><tr><td>color3</td><td style="color:#000; background-color:#DAAD86">#DAAD86</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#BC986A">#BC986A</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#FBEEC1">#FBEEC1</td></tr>
+</table>
+</div>
+
+<button class="collapsible">Bright Light Palette</button>
+<div class="content">
+<table>
+<tr><th>Bright Light Palette</th><th>Hex value</th></tr>
+<tr><td>color1</td><td style="color:#fff; background-color:#FAED26">#FAED26</td></tr>
+<tr><td>color2</td><td style="color:#fff; background-color:#46344E">#46344E</td></tr><tr><td>color3</td><td style="color:#000; background-color:#5A5560">#5A5560</td></tr>
+<tr><td>color4</td><td style="color:#000; background-color:#9D8D8F">#9D8D8F</td></tr>
+<tr><td>color5</td><td style="color:#000; background-color:#9B786F">#9B786F</td></tr>
+</table>
+</div>
+ </main>
+ </div>
+ 		<footer>
+		<p>&copy; 2018 Framework-4</p>
+		</footer>
+  </div>
+  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+</body>
+</html>

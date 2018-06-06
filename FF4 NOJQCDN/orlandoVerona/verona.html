@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,	initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/verona.css" type="text/css">
+    <link rel="stylesheet" href="css/veronaNav.css" type="text/css">
+    
+    <style>
+		h4{
+			padding-top: 20px;
+		}
+		footer{
+			padding: 12px;
+		}
+	 .footerVerona{
+			text-align: center;
+			color: #fff;
+			/*padding 1.5rem 0;*/
+		}
+	</style>
+
+    <script src="scriptsVerona/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+  <div class="container"> 
+		<header>
+
+			<div class="logoText"><a href="verona.html">Verona</a></div>
+			<div class="toggleBtn" ><i class="fa fa-bars"></i></div>
+
+			<nav class="navLinks">
+        <ul>
+			<li><a href="#">EVENTS</a></li>
+            <li><a href="#">LODGING</a></li>
+            <li><a href="#">EATS</a></li>
+            <li><a href="#">REVIEWS</a></li>
+        </ul>
+			</nav>  <!-- end of nav --> 
+		</header>
+		<div class="banner">
+			<img  class="img-responsive" src="images/star.JPG" alt="">
+		</div>  <!-- end of banner -->
+
+		<div class="gridContainer">
+			<main>
+             <div class="row">
+              <div class="col-l-12">
+                <h1>Romantic Verona:Home to Romeo and Juliet </h1>
+             
+                     <h3>Visit Verona and swim in the romance</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, facilis quos possimus a odio ratione optio, ut corrupti consequatur aspernatur, nostrum laboriosam tempora totam. Ducimus beatae repellendus tempora reiciendis id.</p>
+             </div>  <!-- end of col -->
+            </div>
+             <div class="row">
+                 <div class="col-s-6">
+                  <h4>Wander across the knight's bridge </h4>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum neque, illo delectus quos repudiandae et commodi deleniti quisquam assumenda. Tempore officiis architecto repudiandae dolorem perspiciatis, asperiores esse dignissimos sapiente nostrum!</p>
+                   <p>Asperiores accusantium unde sint velit iure deleniti magnam quidem fugiat ipsa, quas atque, tempore aut tempora doloribus excepturi omnis rem voluptates amet. Excepturi aut, eaque voluptatum iure aliquid accusamus quo!</p>
+                   <p>Tenetur esse facilis dolorem quas maiores, ex voluptatem .</p>
+                   
+                </div>
+                <div class="col-s-6">
+                    <img class="img-responsive" src="images/kingTower.JPG" alt=""> 
+                </div>     
+             </div>
+             
+             <div class="row">
+                <div class="col-s-6">
+                    <img class="img-responsive" src="images/riverTower.JPG" alt="">
+                </div>
+                 <div class="col-s-6">
+                    <h4>Toss old coins into the ancient river</h4>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia reiciendis sequi eveniet ullam consequuntur recusandae corporis unde quod, hic, nam. Reprehenderit quas reiciendis nisi porro quam cum dolorum neque officia?</p>
+                     <p>Rem iusto facere dolorem nemo placeat ab quisquam quibusdam aliquam ipsa, cum quia a tempore itaque enim incidunt ad odio eos! Error inventore excepturi sequi quos ab, reiciendis, obcaecati sint!</p>
+                     <p>Sequi ab unde amet quo quidem earum magni quis maxime qui vero, .</p>
+                     
+                 </div>
+                </div>
+                
+                 <div class="row">
+                   <div class="col-s-12">
+                    <h3>You will find yourself chatting in one of the many coffee shops</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cumque accusamus corporis ratione fugit veritatis adipisci ipsum possimus vel incidunt, optio iste debitis iusto ea iure, distinctio necessitatibus nemo quod.Similique ut asperiores minus repellendus tempore provident maiores aspernatur voluptates eveniet ratione quisquam praesentium suscipit debitis impedit delectus ipsa. Quasi, sit.</p>
+                     </div>
+                 </div> <!--end row-->
+                 
+                    <div class="row">
+                     <div class="col-s-6">
+                         <img class="img-responsive" src="images/clock.JPG" alt="">
+                     </div>
+                     <div class="col-s-6">
+                        <h4>Lastly settle in to your cozy hotel suite</h4>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum distinctio odit tempora ipsum. Est, blanditiis ipsam, consequuntur impedit vel temporibus qui magni, odio quaerat sed ullam iste natus repellat nam.</p>
+                         <p>Libero debitis hic aut dolore eveniet officiis ab, omnis ea et tempore assumenda reiciendis commodi velit, ut laborum animi illo odit rem saepe. Facere quos facilis, mollitia natus consequatur, explicabo.</p>
+                         <p>Eaque nam voluptatem nulla libero iusto nobis unde aliquam eligendi vel porro totam eveniet dicta rerum eius magni, cumque, cum, voluptatum expedita? Nisi natus eos, consectetur vel! Quisquam, ipsa, obcaecati.</p>
+                     </div>
+                 </div>
+                 
+            </main>
+        </div> <!--close gridContainer-->
+ 
+   <footer class="footerVerona">copyright &copy; 2018</footer>
+   </div> <!--close container div-->
+
+   <script>  
+ $(document).ready(function(){
+	 $(".navLinks").hide();
+	 $(".toggleBtn").click(function(){
+ 	$(".navLinks").slideToggle("fast");
+ 	});
+ });
+	</script>	
+
+</body>
+</html>

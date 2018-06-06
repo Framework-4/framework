@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated banner</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+       body{
+        background-color:#45A293;
+        margin: 0; 
+        padding: 0;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+           
+    }
+    h1, h2, h3{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    header, footer{
+        background-color: silver;
+        text-align: center;
+        padding: 10px;
+    }
+    main{
+        margin: 0 15px;
+    }
+    banner{
+        padding: 20px;
+    }
+
+
+
+.banner h1{
+	padding: 40px;
+	color: #000;
+	
+	}
+	@keyframes bannerColor {
+	from {background-color: #66FCF1}
+	to {background-color: #1F2833;}
+}
+    
+  
+    
+	@keyframes bannerGrow {
+	from {font-size: 12px;
+		padding: 0;
+		color: #000;}
+	to {font-size: 36px;
+		padding: 40px;
+		color: #66FCF1;}
+}
+/* The elements to apply the animation to */
+div.banner {
+  
+	animation-name: bannerColor;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+.banner h1{
+
+	animation-name: bannerGrow;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+		}
+/*media query*/
+
+
+</style>
+</head>
+ <body>
+<div class="container">
+
+<header>
+<h3>I am the header</h3>
+
+</header>
+<main>
+<div class = "banner">
+  <h1>Watch me grow!</h1>
+</div>
+        <div >
+            <h1>Animated banner using CSS</h1>
+            <p>To use this template, change the text of the h1 in the banner div.Edit the CSS file to reflect the background color you want to start with ("from") and end with ("to") and the font size and color to start with and end with.
+            </p>
+
+        </div>
+	</main>
+	<footer><h3>I am the footer</h3></footer>
+</div><!--end container div-->
+
+
+  </body>
+</html>

@@ -1,0 +1,125 @@
+/*--STYLES FOR NAVIGATION*/
+
+header, .navLinks li{
+	background-color: var(--color2);
+}
+ .logoText a, .toggleBtn, .navLinks a{
+	color: #fff;
+}
+.navLinks li{
+		border-top: 1px solid var(--color4);
+}
+.navLinks a{
+	display: block;
+}
+.navLinks a:hover{
+	color:var(--color2);
+	background-color: var(--color4);;
+}
+.logoText a:hover{
+	color:var(--color4);
+	background-color: var(--color2);;
+}
+
+.logoText {
+	font-family: "Arial", sans-serif;
+	font-weight: bold;}
+.navLinks li{
+	font-family: "Arial", sans-serif;}
+
+header{
+	padding:  10px;
+	}
+header:after{
+	content: "";
+	display: table;
+	clear: both;
+	}
+
+.banner img{
+	display: block;
+	width: 100%;
+}
+/*add margin to UL to drop it down below buttons*/
+.navLinks ul{
+	margin-top: 45px;
+	list-style-type: none;
+	}
+/*logo text styles*/	
+.logoText {
+	float: left;
+	font-size:14pt;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 140px;
+}
+.logoText a{
+	text-decoration: none;
+	display: block;
+}
+/*toggle button styles*/
+.toggleBtn {
+	float: right;
+	font-size:22pt;
+	text-align: center;
+	font-weight:400;
+	line-height: 25px;
+	height: 25px;
+	margin: 5px 5px 5px 0;
+	width: 40px;
+}
+ /*nav link styles*/
+.navLinks li{
+	font-size: 14pt;
+	line-height: 35px;
+	height: 35px;
+	text-align: center;
+	margin-bottom: 0;
+
+	}
+.navLinks a {
+	text-decoration: none;
+	display: block;
+	}
+
+/*-- NAVIGATION MEDIA QUERY--------------*/
+@media screen and (min-width: 500px) {
+/*remove top-margin used for dropdown, make sure nav is not hidden, and hide the toggle*/
+	.navLinks ul{
+		margin: 0;
+		padding: 0;
+		float:right;}
+	.navLinks{
+		display: block !important;}
+	.toggleBtn{
+		display:	none;}
+/*Change link font size, width at  breakpoints*/
+	header{
+		padding: 0;
+		border-bottom: 1px solid var(--color4);}
+	
+	.navLinks li {
+		width: 80px;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		line-height: 50px;
+		font-size: 16px;
+		display: block;
+		border: none;
+		border-left: 1px solid var(--color4);
+		float: left;}
+}
+@media screen and (min-width: 700px) {
+	.navLinks li {
+		width: 120px;
+		font-size: 18px;}
+	.logoText {
+		font-size:18pt;
+		width: 170px;
+		padding-top: 5px;}
+}
+
+
+

@@ -1,0 +1,59 @@
+/*Dusty Rose Palette;*/
+:root{
+
+--color1:#4E4E50;
+--color2:silver;
+--color3:#950740;
+--color4:#C57588;
+--color5:#CFA4AE;
+--color6:#D1DEEB;
+}
+body{
+	background-color: var(--color6);
+	color: #333;
+}
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.gridContainer{
+	padding: 0 50px;
+}
+
+header:after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+.banner img{
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid var(--color3);
+	border-right: 1px solid var(--color3);
+	border-left: 1px solid var(--color3);
+}
+
+h1, h2, h3{
+	margin-top: 10px;
+}
+h1{
+	color: var(--color3);
+}
+footer{
+	background: var(--color3);
+	color: #fff;
+	text-align: center;
+	padding: 8px 0;
+}
+.calendarBox{
+padding-top: 10px;
+	padding-bottom: 20px;
+	background: var(--color5);
+	margin-top: 10px;
+	border: 1px solid var(--color3);
+		border-radius: 5px;
+		margin-top: 10px;
+	box-shadow: 3px 3px #333;
+	}

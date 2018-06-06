@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,	initial-scale=1.0">
+<title>Basic Nav2</title>
+<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/meaderyBase.css">
+<link rel="stylesheet" href="css/meadery.css">
+<link rel="stylesheet" href="css/meaderyNav.css">
+
+<script src="scripts/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+
+<header>
+
+<div class="logoText"><a href="index.html">Golden Goblet</a></div>
+<div class="toggleBtn" ><i class="fa fa-bars"></i></div>
+
+
+<nav class="navLinks">
+	<ul>
+		 <ul>
+			<li><a href="#">Blends</a></li>
+			<li><a href="#">Events</a></li>
+			<li><a href="#">Order</a></li>
+			<li><a href="#">Contact</a></li>
+        </ul>
+	</ul>
+</nav>
+
+</header>
+<div class = "banner">
+    <img class="img-responsive" src="images/bees2.png">
+
+</div>
+
+
+
+	
+<div class="gridContainer">
+<main>
+<div class="row">
+	<div class = "col-s-12 ">
+	 
+   
+		<h1>Don't miss our summer fun</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dicta mollitia beatae totam vel magnam, et molestiae voluptas, rerum nesciunt officiis velit, accusantium quaerat! Soluta dicta mollitia beatae totam vel magnam, et molestiae voluptas, rerum nesciunt officiis velit.</p>
+	</div>
+</div><!--end row-->
+<div class="row">
+	<div class = "col-s-4 col-m-4 col-l-4  center">
+	<div class="calendarBox">
+		<h3>June Events</h3>
+		<div class="calendar">
+		<h5>June 4: June Tasting</h5>
+		<h5>June 11: Moonlight Hayride</h5>
+		<h5>June 21: Family Night</h5>
+		<h5>June 30: Music and Mead </h5>
+		</div>
+		</div>
+</div>
+
+	<div class = "col-s-8 col-m-8 col-l-8">
+		<h3>The amazing history of mead</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed. </p>
+	</div>
+
+</div> <!--end row1 div-->
+
+
+<br>
+<div class="row">
+	<div class="col-m-4 ">
+	<img class="img-responsive" src="images/room.jpeg" alt="">
+		<h3>New tasting Room</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-4 ">
+		<img class="img-responsive" src="images/tanks.jpeg" alt="">
+		<h3>Tours available</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-4 ">
+		<img class="img-responsive" src="images/bottles.jpeg" alt="">
+		<h3>Summer blends</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+
+</div> <!--end row 4 div-->
+ </main><!--end Main div-->
+</div><!--end gridContainer div-->
+
+	
+
+<footer>
+<p>Golden Goblet Meadery</p>
+</footer>
+</div> <!--end container div-->
+<script>
+ $(document).ready(function(){
+	 $(".navLinks").hide();
+	 $(".toggleBtn").click(function(){
+ 	$(".navLinks").slideToggle("fast");
+ 	});
+ });
+	</script>
+</body>
+</html>

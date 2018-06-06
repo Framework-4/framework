@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,	initial-scale=1.0">
+<title>Home</title>
+<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="navPlugin.css">
+
+<style>
+    
+  body{
+        background-color:#45A293;
+        margin: 0;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+.container{
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+footer{
+        background-color: silver;
+        text-align: center;
+        padding: 10px;
+    }
+    
+main{
+    margin: 0 15px;
+    background-color: #fff;
+    }  
+    
+    main p{
+        margin-bottom: 8px;
+    }
+    </style>
+<script src="jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+	<div class="container"> 
+		<header>
+
+			<div class="logoText"><a href="index.html">Logo/Text</a></div>
+			<div class="toggleBtn" ><i class="fa fa-bars"></i></div>
+
+			<nav class="navLinks">
+					 <ul>
+						<li><a href="#">Page1</a></li>
+						<li><a href="#">Page2</a></li>
+						<li><a href="#">Page3</a></li>
+						<li><a href="#">Page4</a></li>
+					</ul>
+			</nav>
+		</header>
+
+
+
+			<main>
+				<div >
+					
+						<h1>Navigation plugin</h1>
+						<p>To use this navigation plugin, simply save as your index page and edit the links. THe javasccript is included at the bottom. You will need to link to the navPlugin.css file as shown in the head.You will also need to link to a JQuery library as shown in the head. Make sure you correct  the paths for the css files  and the js file.  If you want to use a banner image,you can add it underneath the header.
+						<p>A few embedded styles, like body color and container size have been added to the head section just to make this demo easier to see.</p>
+					</div>
+			
+			 </main><!--end Main div-->
+
+		<footer>
+		<p>This is the footer</p>
+		</footer>
+		</div><!--end container div-->
+		<script>
+ $(document).ready(function(){
+	 $(".navLinks").hide();
+	 $(".toggleBtn").click(function(){
+ 	$(".navLinks").slideToggle("fast");
+ 	});
+ });
+		</script>
+</body>
+</html>

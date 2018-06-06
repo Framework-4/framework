@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ResponsiveSlides.js &middot; Responsive jQuery slideshow</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/responsiveslides.css" type="text/css">
+  <link rel="stylesheet" href="css/slider.css" type="text/css">
+ 
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/responsiveslides.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <h1>ResponsiveSlides.js</h1>
+    <h2>Simple &amp; lightweight responsive slideshow plugin (in 1kb)</h2>
+
+
+
+    <!-- Slideshow 1 -->
+    <ul class="rslides" id="slider1">
+      <li><img src="sliderImages/1.JPG" alt=""></li>
+      <li><img src="sliderImages/3.JPG" alt=""></li>
+      <li><img src="sliderImages/2.jpg" alt=""></li>
+    </ul>
+<!-- Slideshow 3 Pager -->
+    <ul id="slider3-pager">
+      <li><a href="#"><img src="sliderImages/1_thumb.JPG" alt=""></a></li>
+      <li><a href="#"><img src="sliderImages/3_thumb.JPG" alt=""></a></li>
+      <li><a href="#"><img src="sliderImages/2_thumb.jpg" alt=""></a></li>
+    </ul>
+
+   <a href="http://responsiveslides.com/" id="download">See the documentation</a>
+    <p class="footer">ResponsiveSlides.js is created by <a href="http://viljamis.com">@viljamis</a>. It's released under the MIT license. If you have any questions or feedback you can use the <a href="https://github.com/viljami/ResponsiveSlides.js">GitHub project page</a>.</p>
+  </div>
+      <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+
+ 
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+          
+         $(".rslides").responsiveSlides({
+           auto: false,
+            pager: true,
+ });
+
+  </script>
+</body>
+</html>

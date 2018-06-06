@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<title>Framework 4 - forms</title>-->
+
+
+	<link rel="stylesheet" href="formPlugin.css">
+
+<style>
+   body{
+        background-color:#45A293;
+        margin: 0; 
+    }
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+    header, footer{
+        background-color: silver;
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+    main{
+        margin: 0 15px;
+    }
+    
+   
+.formA {
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 500px;
+	background: #f0f0f0;
+	padding: 20px 30px 20px 30px;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #888;
+	border:1px solid #909090;
+	border-radius: 5px;
+}
+.formA h1 {
+	font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding: 0px 0px 10px 40px;
+	display: block;
+	background: #e8e8e8;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin: -10px -30px 30px -30px;
+	color: #505050;
+}
+.formA h1>span {
+	display: block;
+	font-size: 11px;
+}
+.formA fieldset{
+	border:1px solid #909090;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.formA legend{
+	display: block;
+	margin-bottom: 10px;
+	text-align: left;
+	font-style: italic;
+	color: #505050;
+	}
+.formA label {
+	display: block;
+	margin: 0px 0px 5px;
+}
+.formA label>span {
+	float: left;
+	width: 20%;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 5px;
+	color: #333;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+}
+.formA input[type="text"],
+.formA input[type="email"],
+.formA input[type="tel"],
+.formA textarea, 
+.formA select{
+	border: 1px solid #CCC;
+	color: #888;
+	height: 25px;
+	line-height:25px;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: 0 none;
+	padding: 5px 0px 5px 5px;
+	width: 70%;
+	border-radius: 4px;
+	box-shadow: 2px 2px #888888;
+}
+.formA select {
+	background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='darkgrey'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+	background-size: 12px;
+	background-position: calc(100% - 20px) center;
+	appearance:none;
+	-webkit-appearance:none; 
+	-moz-appearance: none;
+	height: 35px;
+	line-height:15px;
+}
+
+.formA textarea{
+	height:100px;
+	padding: 5px 0px 0px 5px;
+	width: 70%;
+}
+.formA .radioList, 
+	.formA .checkboxList {
+	border: 1px solid #ccc;
+	background: #fff;
+	display: block;
+	width: 70%;
+	overflow: auto;
+	margin: 10px 10px 10px 10px;
+	padding: 5px 5px 5px 10px;
+	border-radius: 4px;
+	box-shadow: 2px 2px #888888;
+}
+input[type="radio"]{
+ 	margin: 2px 10px 2px 5px;
+}
+.formA .button {
+	background: #FFF;
+	border: 1px solid #CCC;
+	width: 70px;
+	padding: 8px 10px;
+	color: #333;
+	border-radius: 4px;
+	box-shadow: 2px 2px #888888;
+	display: block;
+	font-weight: bold;
+}
+.formA input[type="submit"]{	
+	float: left;
+	margin-bottom: 20px;
+	}
+
+.formA input[type="reset"]{	
+	float: right;
+	margin-right: 40px;
+	}	
+	
+.formA .button:hover {
+	color: #fff;
+	font-style: bold;
+	background-color: #505050;
+	border-color: #000;
+}
+
+
+    
+</style>
+
+
+</head>
+<body>
+	<div class="container">
+<header>I am the header</header>
+		<main>
+			<div >
+					 <h1>Form Template</h1>
+					 <p>Copy and paste the hmtl for the form below and edit it to fit your needs. If you wish, you can copy and paste the CSS into a linked css file. </p>
+			
+            </div>
+				 <div >
+					 <form action="" method="post" class="formA">
+						<h1>Form Title 
+							<span>Please fill in all fields.</span>
+						</h1>
+						<fieldset>
+							<legend>Fieldset legend (optional)</legend>
+								<label for="name">
+									<span>Your Name :</span>
+									<input id="name" type="text" name="name" placeholder="Your Full Name">
+								</label>
+								<label for="email">
+									<span>Your Email :</span>
+									<input id="email" type="email" name="email" placeholder="Valid Email Address">
+								</label >
+								<label for="phone">
+									<span>Your Phone :</span>
+									<input id="phone" type="tel" name="tel" placeholder="Phone number">
+								</label>
+								<label for="message">
+									<span>Textarea:</span>
+									<textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+								</label> 
+						 		<label for="color">
+									<span>Select:</span>
+									<select name="color">
+										<option>black</option>
+										<option>white</option>
+										<option>red</option>
+										<option>yellow</option>
+										<option>blue</option> 
+										<option>green</option>
+										<option>orange</option>
+										<option>purple</option>
+										<option>pink</option>
+									</select>
+								</label>
+								<label for="size">
+										<span>Radio:</span>
+											 <ul class = "radioList">
+												<li><input type="radio" name="size" value="small">Small</li>
+												<li><input type="radio" name="size" value="medium">Medium</li>
+												<li><input type="radio" name="size" value="large">Large</li>
+												<li><input type="radio" name="size" value="xlarge">Extra Large</li>
+										</ul>
+								</label>
+								<label for='feature'>
+									<span>Checkbox:</span>
+										<ul class ="checkboxList">
+											<li><input type="checkbox" name="feature" value="feature1"> Feature 1 </li>
+											<li><input type="checkbox" name="feature" value="feature2" checked> Feature 2 </li>
+											<li><input type="checkbox" name="feature" value="feature3"> Feature 3 </li>
+											<li><input type="checkbox" name="feature" value="feature4"> Feature 4 </li>
+											<li><input type="checkbox" name="feature" value="feature5"> Feature 5 </li>
+											<li><input type="checkbox" name="feature" value="feature6"> Feature 6 </li>
+											</ul>
+								</label>
+								 <label for="submit">
+									<span>&nbsp;</span> 
+									<input type="submit" class="button" value="Submit"> 
+								</label> 
+								<label for="reset">
+									<span>&nbsp;</span> 
+									<input type="reset" class="button" value="Reset"> 
+								</label>
+						</fieldset>
+					</form>
+				</div>
+		
+			</main>
+	
+		<footer>I am a footer</footer>
+	</div> <!--end container div-->
+</body>
+</html>

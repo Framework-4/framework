@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,	initial-scale=1.0">
+<title>Framework4 Grid</title>
+<link href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/framework4.css">
+<link rel="stylesheet" href="../css/nav4.css">
+<link rel="stylesheet" href="../css/frame4.css">
+
+<script src="../scripts/jquery-3.3.1.min.js"></script>
+<script src="../scripts/nav.js"></script>
+
+</head>
+<body id="grid">
+<div class="container">
+		<header>
+
+			<div class="logoText"><a href="../index.html">Framework-4</a></div>
+			<div class="toggleBtn" ><i class="fa fa-bars"></i></div>
+
+			<nav class="navLinks">
+					 <ul>
+						<li><a href="grid.html">Grid</a></li>
+						<li><a href="styles.html">Styles</a></li>
+						<li><a href="plugins.html">Plugins</a></li>
+						<li><a href="colors.html">Colors</a></li>
+					</ul>
+			</nav>
+		</header>
+
+<div class="gridContainer">
+<main>
+	<h1>How to use our grid</h1>
+	<p>Framework-4's fantatic grid is based upon 12-columns that are contained within rows. You decide how many of the possible 12 columns you want a section to occupy and assign the corresponding column class. The column classes are given a left and right padding of 15px and the rows are given left and right negative padding of -15px. </p>
+	<p>The negative margins on the rows cancel out the left padding on the first column and the right padding on the last column in a row. If a row has more than 12 columns, the extra ones will float underneath and the spacing will still be uniform. Click on the buttons below for more on our grid structure and syntax.</p>
+	<pre><code>
+	.gridContainer{
+		padding: 0 15px;
+		background-color: #fff;
+	}
+	.row{
+		margin-right: -15px;
+		margin-left: -15px;
+	}
+	</code></pre> 
+<button class="collapsible">An example</button>
+<div class="content">
+
+<div class="row justify">
+	<div class = "col-s-12 col-m-12 col-l-4">
+		<h2>Row1 Section1</h2>
+		<p > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eveniet sed nostrum beatae laudantium inventore omnis pariatur repudiandae officia nesciunt deserunt voluptas, blanditiis quibusdam asperiores dignissimos labore odio nisi quod.</p>
+	</div>
+
+	<div class = "col-s-6 col-m-6 col-l-4">
+		<h2>Row1 Section2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dicta mollitia beatae totam vel magnam, et molestiae voluptas, rerum nesciunt officiis velit, accusantium quaerat! Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed.</p>
+	</div>
+
+	<div class = "col-s-6 col-m-6 col-l-4">
+		<h2>Row1 Section3</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.Sunt perspiciatis aliquam reprehenderit ratione culpa.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, voluptas non fuga culpa quibusdam earum eligendi? Nulla quaerat, placeat at voluptate neque cupiditate exercitationem, ullam, rerum reprehenderit praesentium commodi. Sed. </p>
+	</div>
+</div> <!--end row1 div-->
+<div class="row">
+	<div class ="col-s-12 ">
+		<h3>Row2 Section1</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+</div>
+ <!--end row  div-->
+<div class="row">
+	<div class ="col-m-6 col-l-4">
+		<h3>Row3 Section1</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis. </p>
+	</div>
+	<div class ="col-m-6 col-l-8">
+		<h3>Row3 Section2</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+</div> <!--end row div-->
+
+<div class="row">
+	<div class="col-m-6  col-l-3">
+		<h3>Row4 Section1</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-6  col-l-3">
+	<h3>Row4 Section2</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-6  col-l-3">
+		<h3>Row4 Section3</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.</p>
+	</div>
+	<div class="col-m-6  col-l-3">
+	<h3>Row4 Section4</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, corporis, nobis! Sapiente libero molestias quibusdam magnam aut corporis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ullam odio deserunt eligendi amet magni architecto officiis, maiores ad eos. Reprehenderit officiis magni rerum sint quaerat, tempore animi. Ea, voluptatibus.</p>
+	</div>
+</div> <!--end row 4 div-->
+</div>
+	<button class="collapsible">Containers</button>
+<div class="content">
+	<p>For our grid to work correctly, every page should have a div with a class of "container" inside the body tag. This div is used to limit the width of the page and to center the page in the browser window.  Inside the "container" div, the page must have a "gridContainer." The header (with navigation) and the footer can be placed outside the "gridContainer" and will extend the full width of the "container" div.Inside the "gridContainer," you can use semantic sections like "main" and "aside".</p>
+</div>
+<button class="collapsible">Rows and columns</button>
+<div class="content">
+	<p>Inside any semantic sections in the "gridContainer" you must have divs that have row and column classes.You can change the number of columns a div will occupy at different browser widths ("breakpoints"). These are set by media queries in the CSS and can be changed to suit your layout. It is good practice to make sure that the number of columns occupied on a row add up to 12 or multiples of 12 at every breakpoint. Your HTML code should should look like this, beginning with the body tag.</p>
+<pre><code>
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;gridContainer&quot;&gt;
+     &lt;header&gt;
+     	&lt;h4&gt;Navigation &lt;/h4&gt;
+     &lt;/header&gt;
+     &lt;main&gt;
+        &lt;div class=&quot;row&quot;&gt;
+          &lt;div class=&quot;col-s-12 col-m-6 col-l-3&quot;&gt;Content&lt;/div&gt;
+          &lt;div class=&quot;col-s-12 col-m-6 col-l-3&quot;&gt;Content&lt;/div&gt;
+          &lt;div class=&quot;col-s-12 col-m-6 col-l-3&quot;&gt;Content&lt;/div&gt;
+          &lt;div class=&quot;col-s-12 col-m-6 col-l-3&quot;&gt;Content&lt;/div&gt;
+        &lt;/div&gt;&lt;!--end row div--&gt;
+     &lt;/main&gt;
+    &lt;/div&gt; &lt;!--end gridContainer div--&gt;
+    &lt;footer&gt;
+      &lt;h4&gt;Footer&lt;/h4&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt; &lt;!--end container div--&gt;
+&lt;/body&gt;
+</code></pre>
+</div>
+<button class="collapsible">Column class syntax</button>
+<div class="content">
+<p>A column class begins with "col", identifies the width of the browser window (viewport) as small, medium, or large (s, m, or l) and specifies the number of columns that the div should occupy at that width. A div with a class of "col-s-6" will occupy 6 of the possible 12 columns (half the screen) at a small viewport. If you want the layout to change at various breakpoints, you will need to have a column style for each breakpoint. For exmaple, a div could take up 6 columns at small size, 4 columns at medium size, and 3 columns at large size. At very small size (mobile portrait), all divs default to 100%. If you want a section to be full width at all breakpoints, give it a single class of "col-s-12". </p>
+</div>
+<button class="collapsible">The math</button>
+<div class="content">
+	<p>Our grid is based upon calculations made in CSS. If you would like to see the math, here are the formulas: 	</p>
+	<pre><code>
+.col-s-1{width: calc(100% / (12/1));}
+.col-s-2{width: calc(100% / (12/2));}
+.col-s-3{width: calc(100% / (12/3));}
+.col-s-4{width: calc(100% / (12/4));}
+.col-s-5{width: calc(100% / (12/5));}
+.col-s-6{width: calc(100% / (12/6));}
+.col-s-7{width: calc(100% / (12/7));}
+.col-s-8{width: calc(100% / (12/8));}
+.col-s-9{width: calc(100% / (12/9));}
+.col-s-10{width: calc(100% / (12/10));}
+.col-s-11{width: calc(100% / (12/11));}
+.col-s-12{width: calc(100% / (12/12));}
+
+</code></pre>
+</div>
+
+
+</main>
+
+</div> <!--end gridContainer-->
+
+		<footer>
+		<p>&copy; 2018 Framework-4</p>
+		</footer>
+</div> <!--end container div-->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+</body>
+</html>
